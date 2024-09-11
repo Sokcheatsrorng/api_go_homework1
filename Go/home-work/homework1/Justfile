@@ -9,7 +9,6 @@ run:
     # Add your run commands here
     go run cmd/app/main.go
 
-# Enhanced autopush algorithm in justfile
 
 branch := `git branch --show-current`
 
