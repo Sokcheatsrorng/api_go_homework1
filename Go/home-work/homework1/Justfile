@@ -1,0 +1,14 @@
+
+
+build:
+    # Add your build commands here
+
+clean:
+    # Add your clean commands here
+
+run:
+    # Add your run commands here
+    go run cmd/app/main.go
+commit:
+    #execute auto push to server
+    ./autopush.sh finish CRUD

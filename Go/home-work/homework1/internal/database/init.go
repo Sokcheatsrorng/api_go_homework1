@@ -1,7 +1,7 @@
 package database
 
 import (
-	"homework1/internal/model"
+	"homework1/internal/models"
 	"log"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
@@ -16,7 +16,7 @@ func InitDB(dsn string) *gorm.DB {
     }
 
     // Perform automatic migration
-	err = db.AutoMigrate(&model.User{}, &model.Product{})
+	err = db.AutoMigrate(&model.Product{}, &model.User{})
     if err != nil {
         log.Fatalf("failed to migrate database: %v", err)
     }
